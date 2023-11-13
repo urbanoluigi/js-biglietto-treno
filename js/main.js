@@ -7,7 +7,7 @@ let prezzoBase = kmDaPercorrere * 0.21;
 
 // Applica gli sconti in base all'età
 if (etapersona < 18) {
-    prezzoBase -= prezzoBase * 0.2; // Sconto del 20% per i minorenni
+    prezzoBase -= prezzoBase * 0.2; // Sconto del 20% per i minori
 } else if (etapersona >= 65) {
     prezzoBase -= prezzoBase * 0.4; // Sconto del 40% per gli over 65
 }
