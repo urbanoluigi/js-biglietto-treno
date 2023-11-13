@@ -1,14 +1,14 @@
 // Chiedi all'utente il numero di chilometri da percorrere e l'età
 let kmDaPercorrere = parseFloat(prompt("Inserisci il numero di chilometri da percorrere:"));
-let etaPasseggero = parseInt(prompt("Inserisci la tua età:"));
+let etapersona = parseInt(prompt("Inserisci la tua età:"));
 
 // Calcola il prezzo del biglietto
 let prezzoBase = kmDaPercorrere * 0.21;
 
 // Applica gli sconti in base all'età
-if (etaPasseggero < 18) {
+if (etapersona < 18) {
     prezzoBase -= prezzoBase * 0.2; // Sconto del 20% per i minorenni
-} else if (etaPasseggero >= 65) {
+} else if (etapersona >= 65) {
     prezzoBase -= prezzoBase * 0.4; // Sconto del 40% per gli over 65
 }
 
